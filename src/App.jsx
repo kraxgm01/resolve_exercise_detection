@@ -136,7 +136,7 @@ function App() {
       video.srcObject = stream;
     });
 
-    const response = await axios.get("http://localhost:3001/api/exercises");
+    const response = await axios.get("https://resovle360backend-production.up.railway.app/api/exercises");
     const resData = response.data[exercise].steps;
     totalSteps = resData.length;
     setAllData(resData);

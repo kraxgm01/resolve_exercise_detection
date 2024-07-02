@@ -21,7 +21,7 @@ const ExerciseList = () => {
 
   useEffect(() => {
     const fetchExercises = async () => {
-      const response = await axios.get('http://localhost:3001/api/exercises');
+      const response = await axios.get('https://resovle360backend-production.up.railway.app/api/exercises');
       setExercises(response.data);
     };
 
