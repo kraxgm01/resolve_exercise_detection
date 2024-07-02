@@ -137,6 +137,7 @@ function App() {
     });
 
     const response = await axios.get("https://resovle360backend-production.up.railway.app/api/exercises");
+    console.log("Response from backend", response);
     const resData = response.data[exercise].steps;
     totalSteps = resData.length;
     setAllData(resData);
